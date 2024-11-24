@@ -27,7 +27,7 @@
 </ul><h2>Setup</h2>
 <hr><p>Instalirajte Java 17 ili noviju verziju.</p>
 <p>Instalirajte Maven za upravljanje zavisnostima.</p>
-<p>Instalirajte i pokrenite PostgreSQL bazu podataka.</p><h5>Steps</h5><ul>
+<p>Instalirajte i pokrenite PostgreSQL bazu podataka.</p><h5>Koraci</h5><ul>
 <li>Preko pgAdmin4 kreirajte bazu podataka pod imenom "ptf", te šemu "public" ukoliko ne postoji.</li>
 </ul><ul>
 <li>Preuzmite projekat: Klonirajte repozitorij ili kopirajte projektne fajlove u lokalni direktorij.</li>
