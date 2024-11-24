@@ -45,7 +45,7 @@
 </ul><ul>
 <li>**Preuzimanje zavisnosti:**  IntelliJ automatski preuzima Maven zavisnosti na osnovu pom.xml fajla. Ako to ne uradi, desni klik na projekat i odaberite Reload Maven Projects.</li>
 </ul><ul>
-<li>**Pokrenite aplikaciju: ** Pronađite JednostavanSistemETrgovineApplication klasu u src/main/java/com/ahmedfaris/demo. Desni klik na klasu i odaberite Run.</li>
+<li>**Pokrenite aplikaciju:** Pronađite JednostavanSistemETrgovineApplication klasu u src/main/java/com/ahmedfaris/demo. Desni klik na klasu i odaberite Run.</li>
 </ul>
 <ul>
   
