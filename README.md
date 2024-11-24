@@ -39,7 +39,12 @@
 <li>Preuzimanje zavisnosti:  IntelliJ automatski preuzima Maven zavisnosti na osnovu pom.xml fajla. Ako to ne uradi, desni klik na projekat i odaberite Reload Maven Projects.</li>
 </ul><ul>
 <li>Pokrenite aplikaciju:  Pronađite JednostavanSistemETrgovineApplication klasu u src/main/java/com/ahmedfaris/demo. Desni klik na klasu i odaberite Run.</li>
-</ul><ul>
+</ul>
+<ul>
+  
+<li>Aplikacija radi na "localhost:8081/".</li>
+</ul>
+<ul>
 <li>Koristiti email: "admin@gmail.com", password: "password" za pristup admin privilegijama.</li>
 </ul><ul>
 <li>Registracija i prijava korisnika:  Korisnici se mogu registrirati putem button "Register" ili preko /register. Prijava je omogućena putem /login.</li>
