@@ -45,7 +45,7 @@
 <li>Aplikacija radi na <code>localhost:8081</code></li>
 </ul>
 <ul>
-<li>Koristiti email: "admin@gmail.com", password: "password" za pristup admin privilegijama.</li>
+<li>Koristiti email: <code>admin@gmail.com</code>, password: <code>password</code> za pristup admin privilegijama.</li>
 </ul><ul>
 <li>Registracija i prijava korisnika:  Korisnici se mogu registrirati putem button "Register" ili preko /register. Prijava je omogućena putem /login.</li>
 </ul>
