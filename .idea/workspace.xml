@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d26b0e-53fe-4976-8988-f1014b5a422c" name="Changes" comment="Initial">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eca618f3-1bdf-444f-b010-8a51114bf851.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eca618f3-1bdf-444f-b010-8a51114bf851.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eca618f3-1bdf-444f-b010-8a51114bf851/storage_v2/_src_/database/ptf.4rIBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eca618f3-1bdf-444f-b010-8a51114bf851/storage_v2/_src_/database/ptf.4rIBAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/OrderItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/OrderItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/OrderItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/OrderItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/checkout_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/checkout_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/checkout_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/checkout_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +158,7 @@
       <workItem from="1732411384103" duration="530000" />
       <workItem from="1732413389119" duration="4616000" />
       <workItem from="1732418154009" duration="9000" />
-      <workItem from="1732458934084" duration="1086000" />
+      <workItem from="1732458934084" duration="1915000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />

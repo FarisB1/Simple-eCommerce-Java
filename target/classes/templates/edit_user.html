@@ -156,13 +156,13 @@
 
   <form th:action="@{/users/edit/{id}(id=${user.id})}" th:object="${user}" method="post">
     <div>
-      <label for="username">Username:</label>
-      <input type="text" th:field="*{username}" id="username" placeholder="Enter username" />
+      <label for="username">Ime:</label>
+      <input type="text" th:field="*{username}" id="username" placeholder="Unesite ime" />
     </div>
 
     <div>
       <label for="email">Email:</label>
-      <input type="text" th:field="*{email}" id="email" placeholder="Enter email" />
+      <input type="text" th:field="*{email}" id="email" placeholder="Unesite email" />
     </div>
 
     <div style="display: flex; flex-direction: column;">

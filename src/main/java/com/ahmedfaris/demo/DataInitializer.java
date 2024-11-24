@@ -95,7 +95,7 @@ public class DataInitializer implements CommandLineRunner {
         //3
 
         Product product3 = new Product();
-        product3.setName("OPTIMUM WHEY PROTEIN GOLD STANDARD, 2270g");
+        product3.setName("WHEY PROTEIN GOLD STANDARD");
         product3.setDescription("Visoko kvalitetne surutkine bjelančevine\n" +
                 "24 g bjelančevina na obrok\n" +
                 "Dodani enzimi za bolju probavu");

@@ -391,9 +391,10 @@ button {
     background-color: #ffffff;
     height: auto;
     border: 2px;
-    border-style: dotted;
+    border-style: groove;
     padding: 20px 0px;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 .image_4 {
     width: 100%;

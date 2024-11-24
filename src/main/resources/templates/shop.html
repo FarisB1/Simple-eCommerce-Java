@@ -113,21 +113,18 @@
                 <span style="color: #050505!important;" th:text="${product.price}"></span> KM
               </h2>
               <h2 class="dolor_text" th:text="${product.name}"></h2>
-              <h2 class="dolor_text_1" style="color: #050505!important;" th:text="${product.stock}"></h2>
-              <p class="tempor_text" style="color: #050505!important;" th:text="${product.description}"></p>
+              <p class="tempor_text" style="color: #050505!important;  overflow: hidden;  display: -webkit-box;  -webkit-line-clamp: 4;  -webkit-box-orient: vertical;  text-overflow: ellipsis;" th:text="${product.description}"></p>
 
-              <!-- Add a form to submit quantity and product details -->
               <div class="container">
               <form th:action="@{/cart/add/{productId}(productId=${product.id})}" method="POST">
                 <div class="quantity" style="text-align: center">
-                  <!-- Input for quantity -->
                   <br>
                   <label for="quantity">Količina:</label>
-                  <input type="number" id="quantity" name="quantity" min="1" max="${product.stock}" value="1" style="text-align: center; width: 40%" required>
+                  <input type="number" id="quantity" name="quantity" min="1" max="${product.stock}" value="1" style="text-align: center; width: 40%; border: hidden;" required>
                 </div>
 
                 <div style="width: 80%; margin: 0 auto; margin-top: 10px;">
-                  <button type="submit" style="width: 100%; background-color: #f2af29;">Dodaj u korpu</button>
+                  <button type="submit" style="width: 100%; background-color: #f2af29; border-radius: 20px;">Dodaj u korpu</button>
                 </div>
               </form>
               </div>
@@ -140,7 +137,7 @@
       <!--sec:authorize="hasAuthority('ROLE_ADMIN')"-->
       <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;" sec:authorize="hasAuthority('ROLE_ADMIN')">
         <a href="/products/add">
-          <button style="background-color: #f2af29; padding: 10px 20px;">Dodaj produkt</button>
+          <button style="background-color: #f2af29; padding: 10px 20px;     border-radius: 20px;">Dodaj produkt</button>
         </a>
       </div>
     </div>
