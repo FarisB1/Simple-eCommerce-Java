@@ -35,7 +35,7 @@
 <hr><p>Instalirajte <b> Java 17</b>  ili noviju verziju.</p>
 <p>Instalirajte <b>Maven</b>  za upravljanje zavisnostima.</p>
 <p>Instalirajte i pokrenite <b>PostgreSQL</b>  bazu podataka.</p><h5>Koraci</h5><ul>
-<li>Preko <b>pgAdmin4</b>  kreirajte bazu podataka pod imenom <code>ptf</code>, te šemu <code>public</code> ukoliko ne postoji.</li>
+<li>Preko <b>pgAdmin4</b>  kreirajte bazu podataka pod imenom <code>ptf</code>, te šemu <code>public</code> ukoliko ne postoji. Provjeriti u application.properties da li username: <code>postgres</code> i password: <code>1234</code> odgovara vašem PostgreSQL username i password</li>
 </ul><ul>
 <li><b>Preuzmite projekat:</b>  Klonirajte repozitorij ili kopirajte projektne fajlove u lokalni direktorij.</li>
 </ul><ul>
