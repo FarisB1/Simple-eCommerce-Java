@@ -29,7 +29,7 @@
 <li>Brisanje artikala preko: <code>/products/delete/{id}</code></li>
 </ul>
 <ul>
-<li>Brisanje korisnika (zahtjeva admin privilegije) preko button-a na: <code>/users</code></li>
+<li>Brisanje korisnika i mijenjanje podataka korisnika (zahtjeva admin privilegije) preko button-a na: <code>/users</code></li>
 </ul>
 <h2>Setup</h2>
 <hr><p>Instalirajte Java 17 ili noviju verziju.</p>
