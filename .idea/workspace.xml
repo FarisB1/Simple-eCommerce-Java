@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d26b0e-53fe-4976-8988-f1014b5a422c" name="Changes" comment="Initial" />
+    <list default="true" id="e7d26b0e-53fe-4976-8988-f1014b5a422c" name="Changes" comment="Initial">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eca618f3-1bdf-444f-b010-8a51114bf851.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eca618f3-1bdf-444f-b010-8a51114bf851.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eca618f3-1bdf-444f-b010-8a51114bf851/storage_v2/_src_/database/ptf.4rIBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eca618f3-1bdf-444f-b010-8a51114bf851/storage_v2/_src_/database/ptf.4rIBAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ahmedfaris/demo/Models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order_confirmation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ahmedfaris/demo/Models/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ahmedfaris/demo/Models/AppUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ahmedfaris/demo/Models/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ahmedfaris/demo/Models/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ahmedfaris/demo/Models/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ahmedfaris/demo/Models/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/meanmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/meanmenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/add_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/add_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/edit_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edit_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/order_confirmation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +50,8 @@
       <list>
         <option value="com.intellij.jpb.JpaEntity" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,12 +67,12 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="5818b88f-b8e5-446b-9f67-9879fe630a50" />
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/FarisB1/Simple-Java-eCommerce.git&quot;,
-    &quot;accountId&quot;: &quot;5818b88f-b8e5-446b-9f67-9879fe630a50&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/FarisB1/Simple-eCommerce-Java.git",
+    "accountId": "5818b88f-b8e5-446b-9f67-9879fe630a50"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -62,29 +92,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.JednostavanSistemETrgovineApplication (1).executor": "Run",
-    "Spring Boot.JednostavanSistemETrgovineApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Web/eShop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.JednostavanSistemETrgovineApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JednostavanSistemETrgovineApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Web/eShop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ahmedfaris.demo.Services" />
@@ -149,6 +179,7 @@
       <workItem from="1732411051920" duration="48000" />
       <workItem from="1732411113306" duration="257000" />
       <workItem from="1732411384103" duration="530000" />
+      <workItem from="1732413389119" duration="3089000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />

@@ -27,8 +27,9 @@ public class Order {
     @JoinColumn(name = "user_id", nullable = false)
     private AppUser user;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL,  orphanRemoval = true)
-    private List<OrderItem> orderItems = new ArrayList<>();
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "order_id")
+    private List<OrderItem> orderItems;
 
     // Getters and setters
     public Long getId() {

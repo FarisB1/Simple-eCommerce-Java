@@ -5,7 +5,7 @@ import lombok.Setter;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "role")
+@Table(name = "user_roles")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +13,12 @@ public class Role {
 
     private String name;
 
+    public Role(String name) {
+        this.name = name;
+    }
+
+    public Role() {
+    }
     public String getName() {
         return name;
     }

@@ -26,7 +26,7 @@ public class AppUser {
 
     @Column(name = "password", nullable = false)
     @NotNull
-    @Size(min = 6)
+    @Size(min = 6, message = "Password mora biti najmanje 6 karaktera")
     private String password;
 
     @Column(name = "email", unique = true)

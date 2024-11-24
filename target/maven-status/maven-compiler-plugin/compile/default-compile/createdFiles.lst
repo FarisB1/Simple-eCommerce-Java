@@ -5,6 +5,7 @@ com\ahmedfaris\demo\Models\AppUser.class
 com\ahmedfaris\demo\Config\SecurityConfig.class
 com\ahmedfaris\demo\Repositories\RoleRepository.class
 com\ahmedfaris\demo\Services\ProductService.class
+com\ahmedfaris\demo\DataInitializer.class
 com\ahmedfaris\demo\Controllers\UserController.class
 com\ahmedfaris\demo\Services\UserService.class
 com\ahmedfaris\demo\Controllers\AccountController.class
