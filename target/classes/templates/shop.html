@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:sec="http://www.thymeleaf.org">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Shop</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="/css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="/images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets -->
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+
+</head>
+<body>
+
+
+<!--header section start -->
+<div class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="logo"><a href="#"><img src="/images/logo.png" style="height: 100px; margin-left:10%"></a></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">POČETNA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/products">PRODUKTI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">O NAMA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">KONTAKT</a>
+          </li>
+          <li sec:authorize="isAuthenticated()">
+            <a class="nav-link" href="/orders">NARUDŽBE</a>
+          </li>
+
+          <li sec:authorize="hasAuthority('ROLE_ADMIN')">
+            <a class="nav-link" href="/users">KORISNICI</a>
+          </li>
+        </ul>
+
+
+        <form sec:authorize="isAuthenticated()" method="post" action="/logout">
+          <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+          <button type="submit" class="btn btn-danger">
+            Logout
+          </button>
+
+        </form>
+
+        <ul class="navbar-nav" sec:authorize="!isAuthenticated()">
+
+          <li class="nav-item">
+            <a href="/register" class="btn btn-outline-primary me-2">Register</a>
+          </li>
+          <li class="nav-item">
+            <a href="/login" class="btn btn-primary">Login</a>
+          </li>
+        </ul>
+
+        <button id="cart-button" class="ml-5 bg-white" sec:authorize="isAuthenticated()">
+          <a href="/cart">
+            <img src="/images/cart-icon.png" alt="Cart" style="width: 24px; height: 24px;">
+          </a>
+        </button>
+      </div>
+    </nav>
+  </div>
+</div>
+<!--header section end -->
+  <!--vegetables  section start -->
+  <div class="vegetables_section layout_padding">
+    <div class="container">
+      <div class="image_2"><img src="images/img-2.png" style="width: 80px;"></div>
+      <h1 class="about_taital">Naši produkti</h1>
+      <p class="lorem_text">Ovdje možete vidjeti sve proizvode koje nudimo.</p>
+      <div class="vegetables_section_2 layout_padding">
+        <div  class="row">
+          <!--sec:authorize="hasAuthority('ROLE_ADMIN')"-->
+          <div th:each="product : ${products}" class="col-md-3">
+            <div class="box_section">
+              <div class="image_4">
+                <img th:src="${product.image}">
+              </div>
+              <h2 class="dolor_text" style="color: #F2AF29;">
+                <span style="color: #050505!important;" th:text="${product.price}"></span> KM
+              </h2>
+              <h2 class="dolor_text" th:text="${product.name}"></h2>
+              <h2 class="dolor_text_1" style="color: #050505!important;" th:text="${product.stock}"></h2>
+              <p class="tempor_text" style="color: #050505!important;" th:text="${product.description}"></p>
+
+              <!-- Add a form to submit quantity and product details -->
+              <div class="container">
+              <form th:action="@{/cart/add/{productId}(productId=${product.id})}" method="POST">
+                <div class="quantity" style="text-align: center">
+                  <!-- Input for quantity -->
+                  <br>
+                  <label for="quantity">Količina:</label>
+                  <input type="number" id="quantity" name="quantity" min="1" max="${product.stock}" value="1" style="text-align: center; width: 40%" required>
+                </div>
+
+                <div style="width: 80%; margin: 0 auto; margin-top: 10px;">
+                  <button type="submit" style="width: 100%; background-color: #f2af29;">Dodaj u korpu</button>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+      <!--sec:authorize="hasAuthority('ROLE_ADMIN')"-->
+      <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;" sec:authorize="hasAuthority('ROLE_ADMIN')">
+        <a href="/products/add">
+          <button style="background-color: #f2af29; padding: 10px 20px;">Dodaj produkt</button>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!--vegetables section end -->
+
+<!--footer section start -->
+<div class="footer_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="address_text">Address</h1>
+        <div class="location_text"><a href="#"><img src="/images/map-icon.png"><span class="padding_left_15">Fakultetska 1, Zenica 72000</span></a></div>
+        <div class="location_text"><a href="#"><img src="/images/call-icon.png"><span class="padding_left_15">+387 32 206 100</span></a></div>
+        <div class="location_text"><a href="#"><img src="/images/mail-icon.png"><span class="padding_left_15">ptf@unze.ba</span></a></div>
+      </div>
+      <div class="col-md-4">
+        <h1 class="address_text">Social link</h1>
+        <div class="location_text"><a href="#"><img src="/images/fb-icon.png"><span class="padding_left_15">Facebook</span></a></div>
+        <div class="location_text"><a href="#"><img src="/images/twitter-icon.png"><span class="padding_left_15">Twitter</span></a></div>
+        <div class="location_text"><a href="#"><img src="/images/instagram-icon.png"><span class="padding_left_15">Instagram</span></a></div>
+        <div class="location_text"><a href="#"><img src="/images/Linkedin-icon.png"><span class="padding_left_15">Linkedin</span></a></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--footer section end -->
+
+
+<!-- Javascript files-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/jquery-3.0.0.min.js"></script>
+<script src="/js/plugin.js"></script>
+<!-- sidebar -->
+<script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/js/custom.js"></script>
+<!-- javascript -->
+<script src="/js/owl.carousel.js"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+<script src="/js/cart.js"></script>
+
+</body>
+</html>
