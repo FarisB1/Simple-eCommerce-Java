@@ -6,25 +6,25 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h2>Your Shopping Cart</h2>
+    <h2>Vaša korpa</h2>
 
     <div th:if="${#lists.isEmpty(cartItems)}" class="alert alert-info">
-        Your cart is empty!
+        Vaša korpa je prazna!
     </div>
     <form method="POST" th:action="@{/checkout}">
     <table th:unless="${#lists.isEmpty(cartItems)}" class="table">
         <thead>
         <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Quantity</th>
+            <th>Produkt</th>
+            <th>Cijena</th>
+            <th>Količina</th>
             <th>Action</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="item : ${cartItems}">
-            <td th:text="${item.product.name}">Product Name</td>
-            <td th:text="${item.product.price}">Price</td>
+            <td th:text="${item.product.name}">Ime produkta</td>
+            <td th:text="${item.product.price}">Cijena</td>
             <td>
                 <input type="number" th:value="${item.quantity}" class="form-control" disabled>
             </td>
@@ -33,7 +33,7 @@
             </td>
         </tr>
         <tr>
-            <td><strong>Total:</strong></td>
+            <td><strong>Ukupno:</strong></td>
             <td th:text="${totalPrice}">0.00</td>
             <td></td>
         </tr>

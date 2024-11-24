@@ -43,23 +43,19 @@ public class UserService implements UserDetailsService {
         this.userRepository = userRepository;
     }
 
-    // 1. Find all users
     public List<AppUser> findAll() {
         return userRepository.findAll();
     }
 
-    // 2. Find user by ID
     public Optional<AppUser> findById(Integer id) {
         return userRepository.findById(id);
     }
 
-    // 3. Create a new user with password encryption
     public AppUser save(AppUser appUser) {
         appUser.setPassword(appUser.getPassword()); // Encrypt password
         return userRepository.save(appUser);
     }
 
-    // 4. Update an existing user
     public AppUser updateUsers(Integer id, AppUser appUserDetails) {
         Optional<AppUser> existingUser = userRepository.findById(id);
         if (existingUser.isPresent()) {
@@ -67,7 +63,6 @@ public class UserService implements UserDetailsService {
             updatedAppUser.setUsername(appUserDetails.getUsername());
             updatedAppUser.setEmail(appUserDetails.getEmail());
 
-            // Update the password only if provided
             if (appUserDetails.getPassword() != null && !appUserDetails.getPassword().isEmpty()) {
                 updatedAppUser.setPassword(appUserDetails.getPassword());
             }
@@ -78,26 +73,23 @@ public class UserService implements UserDetailsService {
         return null;
     }
 
-    // 5. Delete a user by ID
     public boolean delete(Integer id) {
         Optional<AppUser> user = userRepository.findById(id);
         if (user.isPresent()) {
             try {
-                // Delete related orders and their items
                 List<Order> orders = orderRepository.findByUserId(id);
                 for (Order order : orders) {
                     orderItemRepository.deleteByOrderId(order.getId());
                 }
                 orderRepository.deleteByUserId(id);
 
-                // Finally, delete the user
                 userRepository.delete(user.get());
                 return true;
             } catch (DataIntegrityViolationException e) {
                 throw new IllegalStateException("Cannot delete user. User is associated with existing records.", e);
             }
         }
-        return false; // User not found
+        return false;
     }
 
 

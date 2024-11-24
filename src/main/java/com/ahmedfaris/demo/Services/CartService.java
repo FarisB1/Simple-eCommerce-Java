@@ -29,30 +29,28 @@ public class CartService {
     private UserRepository userRepository;
 
     public Cart addToCart(Integer productId, Integer quantity) {
-        // Check if product exists
+
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new IllegalArgumentException("Product not found with ID: " + productId));
 
-        // Get the current user's username
+
         String currentUser = getCurrentUsername();
         if (currentUser == null) {
             throw new IllegalStateException("No authenticated user found.");
         }
 
-        // Fetch the user by username
+
         AppUser user = userRepository.findByEmail(currentUser)
                 .orElseThrow(() -> new IllegalArgumentException("User not found with username: " + currentUser));
 
-        // Check if the product is already in the cart
+
         Optional<Cart> existingCart = cartDao.findByUserAndProduct(user, product);
         if (existingCart.isPresent()) {
-            // If the product exists, update the quantity
             Cart cart = existingCart.get();
             cart.setQuantity(cart.getQuantity() + quantity);
             return cartDao.save(cart);
         }
 
-        // Create and save the new cart entry
         Cart cart = new Cart(product, user, quantity);
         return cartDao.save(cart);
     }

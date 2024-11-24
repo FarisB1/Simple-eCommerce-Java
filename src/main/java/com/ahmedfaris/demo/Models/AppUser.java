@@ -36,13 +36,13 @@ public class AppUser {
 
 
     @ManyToOne
-    @JoinColumn(name = "role_id") // Foreign key to the Role table
-    private Role role; // Example: "ADMIN", "USER"
+    @JoinColumn(name = "role_id")
+    private Role role; // "ADMIN", "USER"
 
 
 
     @Column(nullable = false)
-    private boolean enabled = true; // Default to true
+    private boolean enabled = true;
 
 
 

@@ -19,7 +19,7 @@ public class ProductService {
 
     public List<Product> getAllProducts() {
         List<Product> products = productRepository.findAll();
-        logger.info("Retrieved products: {}", products);  // Log the products
+        logger.info("Retrieved products: {}", products);
         return products;
     }
 

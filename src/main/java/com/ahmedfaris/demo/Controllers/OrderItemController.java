@@ -26,19 +26,16 @@ public class OrderItemController {
         this.orderService = orderService;
     }
 
-    // New page for displaying order items
     @GetMapping("/orders/{orderId}")
     public String getOrderItems(@PathVariable Long orderId, Model model) {
-        // Fetch the order by its ID
+
         Order order = orderService.getOrderById(orderId);
 
-        // Fetch the order items for the order
         List<OrderItem> orderItems = orderItemService.getOrderItemsByOrder(order);
 
-        // Add order and order items to the model
         model.addAttribute("order", order);
         model.addAttribute("orderItems", orderItems);
 
-        return "order_items"; // Thymeleaf view for displaying order items
+        return "order_items";
     }
 }

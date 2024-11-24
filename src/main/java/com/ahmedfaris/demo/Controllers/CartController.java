@@ -29,7 +29,7 @@ public class CartController {
     @PostMapping("/add/{productId}")
     public String addToCart(@PathVariable Integer productId, @RequestParam Integer quantity) {
         cartService.addToCart(productId, quantity);
-        return "redirect:/cart"; // Or wherever you want to redirect after adding
+        return "redirect:/cart";
     }
 
 

@@ -18,7 +18,7 @@ public class Cart {
     @JoinColumn(name = "user_id")
     private AppUser user;
 
-    private Integer quantity = 0; // Add this field for quantity
+    private Integer quantity = 0;
 
     public Cart(Product product, AppUser user, Integer quantity) {
         this.product = product;
@@ -28,7 +28,6 @@ public class Cart {
 
     public Cart() {}
 
-    // Getters and Setters
     public AppUser getUser() {
         return user;
     }

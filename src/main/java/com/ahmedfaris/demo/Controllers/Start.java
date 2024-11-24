@@ -17,18 +17,18 @@ public class Start {
     @ModelAttribute
     public void addUsernameToModel(Model model) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String username = authentication != null ? authentication.getName() : "Guest";  // "Guest" if not authenticated
-        model.addAttribute("username", username);  // Adds username to every page
+        String username = authentication != null ? authentication.getName() : "Guest";
+        model.addAttribute("username", username);
     }
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/") // Handle the root URL
+    @GetMapping("/")
     public String home() {
-        return "home"; // Return the home view
+        return "home";
     }
 
-    @GetMapping("/home") // Handle the root URL
+    @GetMapping("/home")
     public String home(Model model) {
         return "home";
     }
@@ -38,11 +38,11 @@ public class Start {
         return "shop";
     }
 
-    @GetMapping("/users") // Admin route to display all users
+    @GetMapping("/users")
     public String listUsers(Model model) {
         List<AppUser> users = userRepository.findAll();
-        model.addAttribute("users", users); // Pass users to the view
-        return "users"; // This should match the name of your HTML file (e.g., `users.html`)
+        model.addAttribute("users", users);
+        return "users";
     }
 
     @GetMapping("/contact")

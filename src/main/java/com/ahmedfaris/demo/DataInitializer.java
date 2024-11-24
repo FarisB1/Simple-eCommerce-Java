@@ -31,17 +31,14 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Check if roles are already added
         if (roleRepository.count() == 0) {
             addRoles();
         }
 
-        // Check if user is already added
         if (userRepository.count() == 0) {
             addUser();
         }
 
-        // Check if products are already added
         if (productRepository.count() == 0) {
             addProducts();
         }

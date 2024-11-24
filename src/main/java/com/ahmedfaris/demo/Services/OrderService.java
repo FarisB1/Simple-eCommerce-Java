@@ -43,47 +43,37 @@ public class OrderService {
             throw new IllegalStateException("Cart is empty or User is null!");
         }
 
-        // Create new order
         Order order = new Order();
         order.setUser(user);
 
         List<OrderItem> orderItems = new ArrayList<>();
         double totalPrice = 0.0;
 
-        // Set initial order details
         order.setStatus("Pending");
-        order.setOrderDate(LocalDateTime.now()); // Set the order date to current time
+        order.setOrderDate(LocalDateTime.now());
 
-        // Save the order first, without order items
-        orderRepository.save(order);  // Save the order to the database
-        orderRepository.flush();  // Ensure the order is persisted and order_id is set
+        orderRepository.save(order);
+        orderRepository.flush();
 
-        // Now, process the cart items and create OrderItems
         for (Cart cartItem : cartItems) {
             OrderItem orderItem = new OrderItem();
             orderItem.setProduct(cartItem.getProduct());
             orderItem.setQuantity(cartItem.getQuantity());
 
-            // Set the price of the OrderItem from the product's price
             orderItem.setPrice(cartItem.getProduct().getPrice());
 
-            // Calculate the total price by multiplying quantity and price of the product
             totalPrice += cartItem.getProduct().getPrice() * cartItem.getQuantity();
 
-            // Set the order for the OrderItem
-            orderItem.setOrder(order);  // Set the order reference for the order item
+            orderItem.setOrder(order);
             orderItems.add(orderItem);
 
-            // Save the OrderItem to the database
-            orderItemRepository.save(orderItem);// Save the individual OrderItem to the database
+            orderItemRepository.save(orderItem);
         }
 
-        // Set the total price for the order after adding all order items
-        order.setTotalPrice(totalPrice);  // Set the total price for the order
+        order.setTotalPrice(totalPrice);
 
-        // Finally, update the order with the order items
-        order.setOrderItems(orderItems);  // Set the order items list to the order
-        orderRepository.save(order);  // Update the order with the order items
+        order.setOrderItems(orderItems);
+        orderRepository.save(order);
         cartRepository.deleteAll();
 
         return order;

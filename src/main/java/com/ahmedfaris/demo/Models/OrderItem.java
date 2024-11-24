@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class OrderItem {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-incremented ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "price", nullable = false)
@@ -24,7 +24,6 @@ public class OrderItem {
     @JoinColumn(name = "product_id", nullable = false)
     private Product product;
 
-    // Getters and setters
     public Long getId() {
         return id;
     }

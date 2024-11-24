@@ -31,7 +31,6 @@ public class Order {
     @JoinColumn(name = "order_id")
     private List<OrderItem> orderItems;
 
-    // Getters and setters
     public Long getId() {
         return id;
     }

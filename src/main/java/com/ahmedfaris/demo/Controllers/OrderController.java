@@ -49,7 +49,6 @@ public class OrderController {
             return "checkout_error";
         }
 
-        // Fetch the user by username
         AppUser user = userRepository.findByEmail(currentUser)
                 .orElseThrow(() -> new IllegalArgumentException("User not found with username: " + currentUser));
 
@@ -61,10 +60,8 @@ public class OrderController {
         }
 
         try {
-            // Create the order for the user
             Order order = orderService.createOrder(user);
 
-            // Create order items and save them
             for (Cart item : cartItems) {
                 Product product = item.getProduct();
                 int quantity = item.getQuantity();
@@ -72,7 +69,7 @@ public class OrderController {
             }
 
             model.addAttribute("order", order);
-            return "checkout_success"; // Or redirect to success page
+            return "checkout_success";
         } catch (Exception e) {
             model.addAttribute("error", "Checkout failed: " + e.getMessage());
             return "checkout_error";
@@ -87,7 +84,6 @@ public class OrderController {
             return "checkout_error";
         }
 
-        // Fetch the user by username
         AppUser user = userRepository.findByEmail(currentUser)
                 .orElseThrow(() -> new IllegalArgumentException("User not found with username: " + currentUser));
 

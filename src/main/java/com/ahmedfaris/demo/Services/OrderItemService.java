@@ -25,13 +25,12 @@ public class OrderItemService {
         }
 
         OrderItem orderItem = new OrderItem();
-        orderItem.setOrder(order); // Set the order reference
-        orderItem.setProduct(product); // Set the product reference
-        orderItem.setProductId(product.getId()); // Set productId
-        orderItem.setPrice(product.getPrice()); // Set the price from the product
-        orderItem.setQuantity(quantity); // Set the quantity from the cart
+        orderItem.setOrder(order);
+        orderItem.setProduct(product);
+        orderItem.setProductId(product.getId());
+        orderItem.setPrice(product.getPrice());
+        orderItem.setQuantity(quantity);
 
-        // Save and return the created order item
         return orderItemRepository.save(orderItem);
     }
 
