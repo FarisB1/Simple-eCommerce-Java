@@ -32,27 +32,27 @@
 <li>Brisanje korisnika i mijenjanje podataka korisnika (zahtjeva admin privilegije) preko button-a na: <code>/users</code></li>
 </ul>
 <h2>Setup</h2>
-<hr><p>Instalirajte Java 17 ili noviju verziju.</p>
-<p>Instalirajte Maven za upravljanje zavisnostima.</p>
-<p>Instalirajte i pokrenite PostgreSQL bazu podataka.</p><h5>Koraci</h5><ul>
-<li>Preko pgAdmin4 kreirajte bazu podataka pod imenom "ptf", te šemu "public" ukoliko ne postoji.</li>
+<hr><p>Instalirajte **Java 17** ili noviju verziju.</p>
+<p>Instalirajte **Maven** za upravljanje zavisnostima.</p>
+<p>Instalirajte i pokrenite **PostgreSQL** bazu podataka.</p><h5>Koraci</h5><ul>
+<li>Preko **pgAdmin4** kreirajte bazu podataka pod imenom "ptf", te šemu "public" ukoliko ne postoji.</li>
 </ul><ul>
-<li>Preuzmite projekat: Klonirajte repozitorij ili kopirajte projektne fajlove u lokalni direktorij.</li>
+<li>**Preuzmite projekat:** Klonirajte repozitorij ili kopirajte projektne fajlove u lokalni direktorij.</li>
 </ul><ul>
-<li>Otvorite projekat u IntelliJ IDEA:  Otvorite IntelliJ, idite na File -&gt; Open i izaberite root direktorij projekta.</li>
+<li>**Otvorite projekat u IntelliJ IDEA:**  Otvorite IntelliJ, idite na File -&gt; Open i izaberite root direktorij projekta.</li>
 </ul><ul>
-<li>Postavite Maven:  U IntelliJ-u, desni klik na pom.xml i odaberite Add as Maven Project.</li>
+<li>**Postavite Maven:**  U IntelliJ-u, desni klik na pom.xml i odaberite Add as Maven Project.</li>
 </ul><ul>
-<li>Preuzimanje zavisnosti:  IntelliJ automatski preuzima Maven zavisnosti na osnovu pom.xml fajla. Ako to ne uradi, desni klik na projekat i odaberite Reload Maven Projects.</li>
+<li>**Preuzimanje zavisnosti:**  IntelliJ automatski preuzima Maven zavisnosti na osnovu pom.xml fajla. Ako to ne uradi, desni klik na projekat i odaberite Reload Maven Projects.</li>
 </ul><ul>
-<li>Pokrenite aplikaciju:  Pronađite JednostavanSistemETrgovineApplication klasu u src/main/java/com/ahmedfaris/demo. Desni klik na klasu i odaberite Run.</li>
+<li>**Pokrenite aplikaciju: ** Pronađite JednostavanSistemETrgovineApplication klasu u src/main/java/com/ahmedfaris/demo. Desni klik na klasu i odaberite Run.</li>
 </ul>
 <ul>
   
-<li>Aplikacija radi na <code>localhost:8081</code></li>
+<li>**Aplikacija radi na** <code>localhost:8081</code></li>
 </ul>
 <ul>
-<li>Koristiti email: <code>admin@gmail.com</code>, password: <code>password</code> za pristup admin privilegijama.</li>
+<li>**Koristiti email:** <code>admin@gmail.com</code>, password: <code>password</code> za pristup admin privilegijama.</li>
 </ul><ul>
-<li>Registracija i prijava korisnika:  Korisnici se mogu registrirati putem button "Register" ili preko /register. Prijava je omogućena putem /login.</li>
+<li>**Registracija i prijava korisnika:**  Korisnici se mogu registrirati putem button "Register" ili preko /register. Prijava je omogućena putem /login.</li>
 </ul>
