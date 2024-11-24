@@ -42,7 +42,7 @@
 </ul>
 <ul>
   
-<li>Aplikacija radi na "localhost:8081/".</li>
+<li>Aplikacija radi na <code>localhost:8081</code></li>
 </ul>
 <ul>
 <li>Koristiti email: "admin@gmail.com", password: "password" za pristup admin privilegijama.</li>
